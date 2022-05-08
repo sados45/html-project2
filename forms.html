@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Page</title>
+</head>
+<body>
+    <h1>Application Form</h1>
+    <p>
+        <strong>Note:</strong>Form is to completed before 21 days.
+    </p>
+    <form action="mailto:abc@mail.com" method="post">
+        <fieldset>
+            <div>
+            <legend><i><b>Personal Details</b></i></legend>
+            <Label for="name">Name:</Label> 
+            <input name="name" type="text" id="name" placeholder="name..."required>
+            </div>
+            <br>
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" placeholder="email..."required>
+            </div>
+            <br>
+            <div>
+                <label for="phone">Phone Number:</label>
+                <input type="tel" name="phone" id="phone">
+            </div>
+            <div>
+                <p>Gender:</p>
+                <input type="radio" name="gender" id="female" value="female">
+                <label for="Female">Female</label>
+            </div>
+            <div>
+                <input type="radio" name="gender" id="Male" value="Male">
+                <label for="Male">Male</label>
+            </div>
+            <br>
+            <div>
+                <label for="date">Date of birth</label>
+                <input type="date" name="date" id="date">
+            </div>
+        </fieldset>
+            <br>
+            <fieldset>
+            <label for="degree">Education Level Completed:</label>
+            <select id="degree"name="degree">
+            <option value="University">University</option>
+            <option value="College">College</option>
+            <option value="High School">High School</option>
+            <option value="None"selected>None </option>
+            </select>
+            </fieldset>
+            <br>
+            <fieldset>
+            <p>Please check if you know any of below</p>
+                <input type="checkbox" name="Html"Value="Html">Html<br>
+                <input type="checkbox" name="Css" Value="Css">Css<br>
+                <input type="checkbox" name="Js"Value="Js">Js<br>
+                <input type="checkbox" name="React" Value="React" checked>React<br>
+                <input type="checkbox" name="NodeJS" Value="NodeJS">NodeJS<br>
+
+            </fieldset>
+            <fieldset>
+                <legend><i><b>Additional Information</b></i></legend>
+                <label>Please add any Information:</label>
+                <br>
+                <textarea name="" rows="10" cols="50" placeholder="message write..."></textarea>
+                <p>Please add any file as. pdf format:</p>
+                <input type="file" name="file" accept=".pdf">
+            </fieldset>
+            <br>
+            <input type="submit" name="submit" value="submit">
+    </form>
+    
+</body>
+</html>
